@@ -1,0 +1,10 @@
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\bin\AluminiumCallouts.dll
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\bin\AluminiumCallouts.pdb
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\bin\RagePluginHookSDK.dll
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\bin\RagePluginHookSDK.xml
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\obj\Debug\AluminiumCallouts.csprojAssemblyReference.cache
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\obj\Debug\AluminiumCallouts.csproj.CoreCompileInputs.cache
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\obj\Debug\AluminiumCallouts.csproj.CopyComplete
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\obj\Debug\AluminiumCallouts.dll
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\obj\Debug\AluminiumCallouts.pdb
+C:\Users\Lights\source\repos\AluminiumCallouts\AluminiumCallouts\bin\RAGENativeUI.dll

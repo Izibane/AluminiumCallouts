@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C51FA4C8-5FFA-4DFC-B869-B008EBFDD8B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AluminiumCallouts</RootNamespace>
+    <AssemblyName>AluminiumCallouts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BetterEMS, Version=3.0.6298.2858, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\Plugins\LSPDFR\BetterEMS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LSPD First Response, Version=0.4.7110.32590, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\Plugins\LSPD First Response.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RAGENativeUI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\RAGENativeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RagePluginHookSDK">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\SDK\RagePluginHookSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Callouts\Investigate\Drug Deal\AlertState.cs" />
+    <Compile Include="Callouts\Investigate\Drug Deal\Strawberry.cs" />
+    <Compile Include="Callouts\Medical\MedicalTransport.cs" />
+    <Compile Include="Callouts\Medical\Unconcious.cs" />
+    <Compile Include="Callouts\Misc\CommunityService.cs" />
+    <Compile Include="Callouts\Misc\Paperwork.cs" />
+    <Compile Include="Callouts\Misc\PublicDuty.cs" />
+    <Compile Include="Callouts\Protests\CityHall.cs" />
+    <Compile Include="Callouts\Protests\CluckingBell.cs" />
+    <Compile Include="Callouts\Protests\FIB.cs" />
+    <Compile Include="Callouts\Protests\LSIA.cs" />
+    <Compile Include="Callouts\Pursuit\Pursuit.cs" />
+    <Compile Include="Callouts\Pursuit\Roadblock.cs" />
+    <Compile Include="Callouts\Pursuit\RoadLocation.cs" />
+    <Compile Include="Callouts\Crash\Crash.cs" />
+    <Compile Include="Callouts\Theft\GrandTheft.cs" />
+    <Compile Include="Callouts\Theft\Mugging.cs" />
+    <Compile Include="Callouts\Theft\Theft.cs" />
+    <Compile Include="util\CalloutUtil.cs" />
+    <Compile Include="util\Marker.cs" />
+    <Compile Include="util\Math.cs" />
+    <Compile Include="util\Stats.cs" />
+    <Compile Include="util\VersionState.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Callouts\Backup Request\Assault\" />
+    <Folder Include="Callouts\Investigate\Domestic Abuse\" />
+    <Folder Include="Callouts\Shooting\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
